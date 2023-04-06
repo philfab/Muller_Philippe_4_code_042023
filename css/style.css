@@ -18,7 +18,8 @@ header {
 }
 
 section {
-  padding: 20px;
+  padding: 15px;
+  margin: 20px 0;
 }
 
 a {
@@ -36,19 +37,44 @@ h1 {
 h2 {
   font-size: 24px;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
   margin-top: 20px;
+}
+
+.restaurants > h2 {
+  margin-top: 30px;
+}
+
+.restaurants {
+  margin-bottom: 0;
 }
 
 p,
 .button {
   font-size: 16px;
   font-weight: 500;
+}
+
+figcaption {
+  padding: 10px;
+}
+
+figcaption p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+figcaption h3 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .back-light {
@@ -60,9 +86,9 @@ p,
 } 
 
 .city-location {
-background-color: var(--gray);
-padding: 12px;
-margin-top: 3px;
+  background-color: var(--gray);
+  padding: 12px;
+  margin-top: 3px;
 }
 
 [class*="icon-"]:before {
@@ -74,7 +100,7 @@ margin-top: 3px;
   color: white;
   font-style: normal;
   position: absolute;
-  left: 9px;
+  left: 14px;
   padding: 3px 8px;
   background-color: var(--violet);
   border-radius: 100%;
@@ -113,6 +139,15 @@ margin-top: 3px;
   content: "\f54e";
 }
 
+.icon-rest:before {
+  content: "\f2e7";
+  margin-right: 6px;
+}
+
+.icon-part:before {
+  content: "\f4c4";
+}
+
 .icon-fonct:hover::before,
 .icon-fonct:focus::before {
   color: var(--violet);
@@ -136,7 +171,7 @@ margin-top: 3px;
 .button-explore {
   color: white;
   border-radius: 25px;
-  margin-top: 30px;
+  margin: 30px 0 40px 0;
   background: linear-gradient(var(--pink) , var(--violet));
 }
 
@@ -157,6 +192,43 @@ margin-top: 3px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 30px 0;
-  list-style-type: none;
+  margin: 30px 0 30px 10px;
 }
+
+.restaurants-cards {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  margin: 15px 0px 60px 0;
+}
+
+.card {
+  border-radius: 20px;
+  filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
+  background-color: white;
+}
+
+.card img {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+footer ul {
+  display: flex;
+  flex-flow: column;
+  gap: 6px;
+  background-color: var(--darkGray);
+  padding: 20px;
+  color: white;
+  font-weight: 300;
+}
+
+footer h3 {
+  font-family: "Shrikhand";
+  margin: 0 0 10px 0;
+}
+
+
