@@ -2,36 +2,39 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <title>Ohmyfood</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap">
         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <title>Ohmyfood</title>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
 <body>
 
-    <header class="back-light">
-        <h1>ohmyfood</h1>
-        <p class="dark-grey city-location icon-location">Paris, Belleville</p>
-
-        <!--  Présentation site  -->
-        <section>
-            <h2>Réservez le menu qui vous convient</h2>
-            <h3 class="dark-grey">Découvrez des restaurants d'exception, selectionnées par nos soins.</h3>
-            <a href="#restaurants" class="button button-explore">
-            Explorer nos restaurants
-            </a>
-        </section>
-
+    <header >
+        <img class="im-header" src="./images/logos/ohmyfood@2x.svg">
     </header>
 
     <main>
 
         <!-- Fonctionnement -->
+        <header>
+            <form class="icon-location city-location dark-grey">
+                <input type="search" class="search-input" placeholder="Paris, Belleville">
+            </form>
+
+            <!--  Présentation site  -->
+            <section>
+                <h2>Réservez le menu qui vous convient</h2>
+                <p class="decouv dark-grey">Découvrez des restaurants d'exception, selectionnées par nos soins.</p>
+                <button href="#restaurants" class="button button-explore">
+                Explorer nos restaurants
+                </button>
+            </section>
+        </header>
+        
         <section>
             <h2>Fonctionnement</h2>
             <ul class="list-fonct">
@@ -52,60 +55,59 @@
             <h2>Restaurants</h2>
 
             <ul class="restaurants-cards">
-
                 <li class="card">
-                    <p class="new">Nouveau</p>
-                    <input type="checkbox" id="inputPalette" name="inputPalette">
-                    <label class="heart" for="inputPalette"></label>
                     <a href="menus/palette_du_gout.html">
                         <figure >
                             <img src="./images/palette_gout.jpg" alt="La palette du goût">
                             <figcaption>
+                                <p class="new">Nouveau</p>
                                 <p>La palette du goût</p>
                                 <h3>Ménilmontant</h3>
+                                <input type="checkbox" id="inputPalette" name="inputPalette">
+                                <label class="heart" for="inputPalette"></label>
                             </figcaption>
                         </figure>
                     </a>
                 </li>
                
                 <li class="card">
-                    <p class="new">Nouveau</p>
-                    <input type="checkbox" id="inputNote" name="inputNote">
-                    <label class="heart" for="inputNote"></label>
                     <a href="menus/note_enchantee.html">
                         <figure >
                             <img src="./images/note_enchantee.jpg" alt="La note enchantée">
                             <figcaption>
+                                <p class="new">Nouveau</p>
                                 <p>La note enchantée</p>
                                 <h3>Charonne</h3>
+                                <input type="checkbox" id="inputNote" name="inputNote">
+                                <label class="heart" for="inputNote"></label>
                             </figcaption>
                         </figure>
                     </a>
                 </li>
 
                 <li class="card">
-                    <input type="checkbox" id="inputFran" name="inputFran">
-                    <label class="heart" for="inputFran"></label>
                     <a href="menus/francaise.html">
                         <figure >
                             <img src="./images/francaise.jpg" alt="À la française">
                             <figcaption>
                                 <p>À la française</p>
                                 <h3>Cité Rouge</h3>
+                                <input type="checkbox" id="inputFran" name="inputFran">
+                                <label class="heart" for="inputFran"></label>
                             </figcaption>
                         </figure>
                     </a>
                 </li>
 
                 <li class="card">
-                    <input type="checkbox" id="inputDelice" name="inputDelice">
-                    <label class="heart" for="inputDelice"></label>
                     <a href="menus/delice_des_sens.html">
                         <figure >
                             <img src="./images/delice_sens.jpg" alt="Le délice des sens">
                             <figcaption>
                                 <p>Le délice des sens</p>
                                 <h3>Folie-Méricourt</h3>
+                                <input type="checkbox" id="inputDelice" name="inputDelice">
+                                <label class="heart" for="inputDelice"></label>
                             </figcaption>
                         </figure>
                     </a>
@@ -117,12 +119,12 @@
     </main>
 
     <footer>
+        
+        <h3>
+            ohmyfood
+        </h3>
+
         <ul>
-            <li>
-                <h3>
-                    ohmyfood
-                </h3>
-            </li>
             <li>
                 <a class="icon-rest" href="#">
                     Proposer un restaurant
