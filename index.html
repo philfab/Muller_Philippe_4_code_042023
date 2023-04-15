@@ -14,7 +14,7 @@
 <body>
 
     <header >
-        <img class="im-header" src="./images/logos/ohmyfood@2x.svg">
+        <img class="im-header" src="./images/logos/ohmyfood@2x.svg" alt="logo">
     </header>
 
     <main>
@@ -29,14 +29,15 @@
             <section>
                 <h2>Réservez le menu qui vous convient</h2>
                 <p class="decouv dark-grey">Découvrez des restaurants d'exception, selectionnées par nos soins.</p>
-                <button href="#restaurants" class="button button-explore">
-                Explorer nos restaurants
+                <button onclick="window.location.href = '#restaurants';" class="button button-explore">
+                    Explorer nos restaurants
                 </button>
             </section>
         </header>
         
         <section>
             <h2>Fonctionnement</h2>
+
             <ul class="list-fonct">
                 <li class="icon-fonct icon-mobile button button-fonc back-light">
                     <i class="number">1</i> Choisissez un restaurant
@@ -47,7 +48,7 @@
                 <li class="icon-fonct icon-store button button-fonc back-light">
                     <i class="number">3</i> Dégustez au restaurant
                 </li> 
-          </ul>
+            </ul>
         </section>
 
         <!-- Restaurants -->
@@ -56,7 +57,7 @@
 
             <ul class="restaurants-cards">
                 <li class="card">
-                    <a href="menus/palette_du_gout.html">
+                    <a class="link-card" href="menus/palette_du_gout.html"></a>
                         <figure >
                             <img src="./images/palette_gout.jpg" alt="La palette du goût">
                             <figcaption>
@@ -67,11 +68,11 @@
                                 <label class="heart" for="inputPalette"></label>
                             </figcaption>
                         </figure>
-                    </a>
+                       
                 </li>
                
                 <li class="card">
-                    <a href="menus/note_enchantee.html">
+                    <a class="link-card" href="menus/note_enchantee.html"></a>
                         <figure >
                             <img src="./images/note_enchantee.jpg" alt="La note enchantée">
                             <figcaption>
@@ -82,11 +83,10 @@
                                 <label class="heart" for="inputNote"></label>
                             </figcaption>
                         </figure>
-                    </a>
                 </li>
 
                 <li class="card">
-                    <a href="menus/francaise.html">
+                    <a class="link-card" href="menus/francaise.html"> </a>
                         <figure >
                             <img src="./images/francaise.jpg" alt="À la française">
                             <figcaption>
@@ -96,11 +96,10 @@
                                 <label class="heart" for="inputFran"></label>
                             </figcaption>
                         </figure>
-                    </a>
                 </li>
 
                 <li class="card">
-                    <a href="menus/delice_des_sens.html">
+                    <a class="link-card" href="menus/delice_des_sens.html"> </a>
                         <figure >
                             <img src="./images/delice_sens.jpg" alt="Le délice des sens">
                             <figcaption>
@@ -110,7 +109,6 @@
                                 <label class="heart" for="inputDelice"></label>
                             </figcaption>
                         </figure>
-                    </a>
                 </li>
                 
             </ul>
