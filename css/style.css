@@ -574,8 +574,7 @@ footer h3 {
     grid-row:2;
   }
 
-  [id="restaurants"] button:nth-last-of-type(2),
-  [id="restaurants"] button:nth-last-of-type(4) {
+  .card-left {
     margin-right: 40px;
   }
 
@@ -655,8 +654,7 @@ footer h3 {
     grid-row:2;
   }
 
-  [id="restaurants"] button:nth-last-of-type(2),
-  [id="restaurants"] button:nth-last-of-type(4) {
+  .card-left {
     margin-right: 50px;
   }
 
