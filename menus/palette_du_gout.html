@@ -19,23 +19,26 @@
     </header>
 
     <main class="main">
-        <article class="container back-light">
-            <img class="im-menu" src="../images/palette_gout.jpg" alt="La Palette du goût">
-    
-            <div class="article-menu back-light">
-                <header class="header-menu">
-                     <h1>La palette du goût</h1>
-                     <input type="checkbox" id="inputMenuPalette" name="inputMenuPalette">
-                     <label class="heart heart-menu" for="inputMenuPalette"></label>
-                </header>
-            </div>
 
+        <img class="im-menu" src="../images/palette_gout.jpg" alt="La Palette du goût">
+        <div class="article-menu back-light">
+            <header class="header-menu">
+                    <h1>La palette du goût</h1>
+                    <input type="checkbox" id="inputMenuPalette" name="inputMenuPalette">
+                    <label class="heart heart-menu" for="inputMenuPalette"></label>
+            </header>
+        </div>
+
+        <article class="container back-light">
              <!-- Entrees -->
             <section>
-                <h2>Entrées</h2>
-                <div class="line-green"></div>
 
-                <ul class="list-menu">
+                <ul class="first-ul list-menu">
+
+                    <li class="li-menu">
+                        <h2>Entrées</h2>
+                        <div class="line-green"></div>
+                    </li>
 
                     <li class="li-menu">
                         <input class="input-menu" type="checkbox" id="inputMenu1">
@@ -83,10 +86,13 @@
 
              <!-- Plats -->
             <section >
-                <h2>Plats</h2>
-                <div class="line-green"></div>
 
                 <ul class="list-menu">
+
+                    <li class="li-menu">
+                        <h2>Plats</h2>
+                        <div class="line-green"></div>
+                    </li>
 
                     <li class="li-menu">
                         <input class="input-menu" type="checkbox" id="inputMenu4">
@@ -135,10 +141,13 @@
 
              <!-- Desserts -->
             <section>
-                <h2>Desserts</h2>
-                <div class="line-green"></div>
 
                 <ul class="list-menu">
+
+                    <li class="li-menu">
+                        <h2>Desserts</h2>
+                        <div class="line-green"></div>
+                    </li>
 
                     <li class="li-menu">
                         <input class="input-menu" type="checkbox" id="inputMenu7">
@@ -186,11 +195,11 @@
 
             </section>
 
-        </article>
+            <button class="button button-explore">
+                Commander
+            </button>
 
-        <button class="button button-explore">
-            Commander
-        </button>
+        </article>
 
     </main>
     

@@ -21,9 +21,8 @@
         <img class="im-header" src="./images/logos/ohmyfood@2x.svg" alt="logo">
     </header>
 
-    <main>
+    <main class="back-light">
 
-        
         <header class="header-main">
             <form class="icon-location city-location dark-grey">
                 <input type="search" class="search-input" placeholder="Paris, Belleville">
@@ -41,79 +40,72 @@
 
 
         <!-- Fonctionnement -->
-        <section class="list-fonct">
-            <h2>Fonctionnement</h2>
+        <div class="border-white">
+            <section class="list-fonct">
+                <h2>Fonctionnement</h2>
 
-            <button class="button button-fonc back-light">
-                <i class="number">1</i><i class="icon-fonct icon-mobile"></i>Choisissez un restaurant
-            </button> 
-            <button class="button button-fonc back-light">
-                    <i class="number">2</i><i class="icon-fonct icon-list"></i>Composez votre menu
-            </button> 
-            <button class="button button-fonc back-light">
-                <i class="number">3</i><i class="icon-fonct icon-store"></i>Dégustez au restaurant
-            </button> 
-        </section>
-
+                <button class="button button-fonc back-light">
+                    <i class="number">1</i><i class="icon-fonct icon-mobile"></i>Choisissez un restaurant
+                </button> 
+                <button class="button button-fonc back-light">
+                        <i class="number">2</i><i class="icon-fonct icon-list"></i>Composez votre menu
+                </button> 
+                <button class="button button-fonc back-light">
+                    <i class="number">3</i><i class="icon-fonct icon-store"></i>Dégustez au restaurant
+                </button> 
+            </section>
+        </div>
         
+
         <!-- Restaurants -->
-        <section id="restaurants" class="restaurants back-light">
+        <section id="restaurants" class="restaurants">
             <h2>Restaurants</h2>
 
-            <div class="card card-new card-left">
+            <figure class="card card-new card-left">
                 <a class="link-card" href="menus/palette_du_gout.html"></a>
-                    <figure >
-                        <img src="./images/palette_gout.jpg" alt="La palette du goût">
-                        <figcaption>
-                            <p class="new">Nouveau</p>
-                            <p>La palette du goût</p>
-                            <h3>Ménilmontant</h3>
-                            <input type="checkbox" id="inputPalette" name="inputPalette">
-                            <label class="heart" for="inputPalette"></label>
-                        </figcaption>
-                    </figure>
-                    
-            </div>
-            
-            <div class="card card-new">
+                <img src="./images/palette_gout.jpg" alt="La palette du goût">
+                <figcaption>
+                    <p class="new">Nouveau</p>
+                    <p>La palette du goût</p>
+                    <h3>Ménilmontant</h3>
+                    <input type="checkbox" id="inputPalette" name="inputPalette">
+                    <label class="heart" for="inputPalette"></label>
+                </figcaption>
+            </figure>
+
+            <figure class="card card-new">
                 <a class="link-card" href="menus/note_enchantee.html"></a>
-                    <figure >
-                        <img src="./images/note_enchantee.jpg" alt="La note enchantée">
-                        <figcaption>
-                            <p class="new">Nouveau</p>
-                            <p>La note enchantée</p>
-                            <h3>Charonne</h3>
-                            <input type="checkbox" id="inputNote" name="inputNote">
-                            <label class="heart" for="inputNote"></label>
-                        </figcaption>
-                    </figure>
-            </div>
+                <img src="./images/note_enchantee.jpg" alt="La note enchantée">
+                <figcaption>
+                    <p class="new">Nouveau</p>
+                    <p>La note enchantée</p>
+                    <h3>Charonne</h3>
+                    <input type="checkbox" id="inputNote" name="inputNote">
+                    <label class="heart" for="inputNote"></label>
+                </figcaption>
+            </figure>
 
-            <div class="card card-left">
-                <a class="link-card" href="menus/francaise.html"> </a>
-                    <figure >
-                        <img src="./images/francaise.jpg" alt="À la française">
-                        <figcaption>
-                            <p>À la française</p>
-                            <h3>Cité Rouge</h3>
-                            <input type="checkbox" id="inputFran" name="inputFran">
-                            <label class="heart" for="inputFran"></label>
-                        </figcaption>
-                    </figure>
-            </div>
+            <figure class="card card-left">
+                <a class="link-card" href="menus/francaise.html"></a>
+                <img src="./images/francaise.jpg" alt="À la française">
+                <figcaption>
+                    <p>À la française</p>
+                    <h3>Cité Rouge</h3>
+                    <input type="checkbox" id="inputFran" name="inputFran">
+                    <label class="heart" for="inputFran"></label>
+                </figcaption>
+            </figure>
 
-            <div class="card">
-                <a class="link-card" href="menus/delice_des_sens.html"> </a>
-                    <figure >
-                        <img src="./images/delice_sens.jpg" alt="Le délice des sens">
-                        <figcaption>
-                            <p>Le délice des sens</p>
-                            <h3>Folie-Méricourt</h3>
-                            <input type="checkbox" id="inputDelice" name="inputDelice">
-                            <label class="heart" for="inputDelice"></label>
-                        </figcaption>
-                    </figure>
-            </div>
+            <figure class="card">
+                <a class="link-card" href="menus/delice_des_sens.html"></a>
+                <img src="./images/delice_sens.jpg" alt="Le délice des sens">
+                <figcaption>
+                    <p>Le délice des sens</p>
+                    <h3>Folie-Méricourt</h3>
+                    <input type="checkbox" id="inputDelice" name="inputDelice">
+                    <label class="heart" for="inputDelice"></label>
+                </figcaption>
+            </figure>
 
         </section>
 
