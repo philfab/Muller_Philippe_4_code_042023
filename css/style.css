@@ -269,14 +269,14 @@ i {
   text-align: center;
 }
 
-.article-menu {
+.header-menu {
   position: absolute;
   top: 330px;
   width: 100%;
   border-radius: 35px 35px 0 0;
 }
 
-.header-menu {
+.section-header {
   text-align: left;
 }
 
@@ -414,8 +414,9 @@ input[type='checkbox']:checked + .heart:before {
 
 .button-explore {
   margin: 30px 0 40px 0;
-  border-radius: 25px;
   padding: 15px 20px;
+  border-radius: 25px;
+  min-width: 170px;
   color: white;
   background: linear-gradient(to bottom,var(--pink) , var(--violet));
   background-size: 100% 200%;
@@ -471,7 +472,7 @@ input[type='checkbox']:checked + .heart:before {
   display: flex;
   flex-flow: column;
   gap: 15px;
-  margin: 15px 15px 15px 15px;
+  margin: 0 15px;
 }
 
 .card {
@@ -596,11 +597,11 @@ footer h3 {
     font-size: 14px;
   }
 
-  .header-menu {
+  .section-header {
     text-align: center;
   }
 
-  .article-menu,
+  .header-menu,
   .container {
     margin : 0 10% 0 10%;
     width: 80%;
@@ -689,11 +690,11 @@ footer h3 {
     font-size: 15px;
   }
 
-  .header-menu {
+  .section-header {
     text-align: center;
   }
 
-  .article-menu,
+  .header-menu,
   .container {
     margin : 0 10% 0 10%;
     width: 80%;
@@ -701,6 +702,5 @@ footer h3 {
 
   .list-menu {
     padding: 0 25% 0 25%;
-
   }
 }
