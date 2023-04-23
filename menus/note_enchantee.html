@@ -18,23 +18,25 @@
     </header>
 
     <main class="main">
-        <article class="container back-light">
-            <img class="im-menu" src="../images/note_enchantee.jpg" alt="La Note Enchantée">
-    
-            <div class="article-menu back-light">
-                <header class="header-menu">
-                     <h1>La note enchantée</h1>
-                     <input type="checkbox" id="inputMenuNote" name="inputMenuNote">
-                     <label class="heart heart-menu" for="inputMenuNote"></label>
-                </header>
-            </div>
 
+        <img class="im-menu" src="../images/note_enchantee.jpg" alt="La Note Enchantée">
+        <header class="header-menu back-light">
+            <section class="section-header">
+                    <h1>La palette du goût</h1>
+                    <input type="checkbox" id="inputMenuNote" name="inputMenuNote">
+                    <label class="heart heart-menu" for="inputMenuNote"></label>
+            </section>
+        </header>
+
+        <div class="container back-light">
              <!-- Entrees -->
             <section>
-                <h2>Entrées</h2>
-                <div class="line-green"></div>
+                <ul class="first-ul list-menu">
 
-                <ul class="list-fonct">
+                    <li class="li-menu">
+                        <h2>Entrées</h2>
+                        <div class="line-green"></div>
+                    </li>
 
                     <li class="li-menu">
                         <input class="input-menu" type="checkbox" id="inputMenu1">
@@ -84,23 +86,24 @@
                         <section class="grid-menu button button-menu">
                             <h3>Foie gras de canard cuit entier</h3>
                             <p>Confiture de figue et pain toasté</p>
-                            <b>35€</b>
+                            <b>20€</b>
                             <span class="span-menu">
                                 <i class="fa fa-circle-check circle"></i>
                             </span>
                         </section> 
                     </li>
-
                     
                 </ul>
             </section>
 
              <!-- Plats -->
             <section >
-                <h2>Plats</h2>
-                <div class="line-green"></div>
+                <ul class="list-menu">
 
-                <ul class="list-fonct">
+                    <li class="li-menu">
+                        <h2>Plats</h2>
+                        <div class="line-green"></div>
+                    </li>
 
                     <li class="li-menu">
                         <input class="input-menu" type="checkbox" id="inputMenu5">
@@ -149,10 +152,12 @@
 
              <!-- Desserts -->
             <section>
-                <h2>Desserts</h2>
-                <div class="line-green"></div>
+                <ul class="list-menu">
 
-                <ul class="list-fonct">
+                    <li class="li-menu">
+                        <h2>Desserts</h2>
+                        <div class="line-green"></div>
+                    </li>
 
                     <li class="li-menu">
                         <input class="input-menu" type="checkbox" id="inputMenu8">
@@ -195,16 +200,14 @@
                             </span>
                         </section> 
                     </li>
-
                 </ul>
-
             </section>
 
-        </article>
+            <button class="button button-explore">
+                Commander
+            </button>
 
-        <button class="button button-explore">
-            Commander
-        </button>
+        </div>
 
     </main>
     
