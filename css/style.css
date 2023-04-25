@@ -19,9 +19,24 @@
   to { transform: rotate(360deg); }
 }
 
-@keyframes fondu {
+/* @keyframes fondu {
   from { opacity: 1; z-index: 10; }
   to { opacity: 0; z-index: -1;}
+} */
+
+@keyframes fondu {
+  0% {
+    opacity: 0.8;
+    z-index: 10;
+  }
+  50%{
+    opacity: 0.8;
+    z-index: 5;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
 
 @keyframes vague {
