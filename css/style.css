@@ -34,13 +34,27 @@
 }
 
 @keyframes vague {
-  0% {
+  from {
     transform: translateY(-100px);
     opacity: 0;
   }
-  100% {
+  to {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+      opacity: 0;
+      transform: scale(1.0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1.0);
   }
 }
 
@@ -399,8 +413,6 @@ i {
   background-image: url(../images/logos/heart-solid.svg);
   opacity: 0;
   z-index: 1;
-
-  transition: all 1s ease;
 }
 
 .span-heart input {
@@ -414,6 +426,7 @@ i {
 
 .span-heart input:checked + i {
   opacity: 1;
+  animation: heart 1s ease;
 }
 
 .heart-menu {
