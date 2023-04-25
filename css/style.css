@@ -21,11 +21,11 @@
 
 @keyframes fondu {
   0% {
-    opacity: .9;
+    opacity: .8;
     z-index: 10;
   }
   50%{
-    opacity: .9;
+    opacity: .8;
   }
   100% {
     opacity: 0;
@@ -84,13 +84,12 @@ h2 {
 }
 
 .spirale {
-  position: absolute;
-  top: 150px;
+  margin-top: 200px;
   padding: 11px 15px;
   font-size: 4rem;
   color: black;
   background-color: var(--green-light);
-  border-radius: 50%;
+  border-radius: 100%;
   animation: spirale 0.5s ease normal;
 }
 
@@ -641,15 +640,7 @@ footer h3 {
 
 }
 /* desktop */
-@media (min-width:1024px) {
-
-  .loader {
-    align-items: center;
-  }
-
-  .spirale {
-    top: initial;
-  }
+@media (min-width:1023.98px) {
   
   h1 {
     font-size: 2.5rem;
